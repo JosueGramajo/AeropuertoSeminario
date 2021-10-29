@@ -179,30 +179,34 @@ $("#enddate_datepicker").datepicker();
                     <ul class="list-unstyled navbar__list">
 
                         <li>
-                            <a href="index.html">
+                            <a href="index.php">
                                 <i class="fas fa-home"></i>Home</a>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="aerolineas.php">
                                 <i class="fas fa-plane"></i>Aerolineas Afiliadas</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="calendar.php">
                                 <i class="fas fa-calendar-alt"></i>Calendario</a>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="preguntas.php">
                                 <i class="fas fa-question"></i>Preguntas</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="about.php">
                                 <i class="fas  fa-bullhorn"></i>Sobre Nosotros</a>
                         </li>
 
 
                     </ul>
+                    <div class="">
+                      <h4>Publicidad</h4>
+                      <img src="images/anuncio.gif" alt="">
+                    </div>
                 </nav>
             </div>
         </aside>
@@ -232,7 +236,7 @@ $("#enddate_datepicker").datepicker();
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">Selección De Boletos</h2>
+                                    <h2 class="title-1">PREGUNTAS FRECUENTES</h2>
 
                                 </div>
                             </div>
@@ -240,137 +244,65 @@ $("#enddate_datepicker").datepicker();
                         <div class="row m-t-25">
                           <div class="col-sm-6 col-lg-3 col-xl-12">
                                 <div class="card">
-								                          <div class="card-header">
-                                        <strong>¡Escoja sus Vuelos con Nosotros!</strong> Seleccione su origen y destino:
-                                    </div>
-									                           <div class="card-body card-block">
-                                        <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+								                        <div class="card-header">
+                                          <strong>¿Qué es Aero Maya?</strong>
+                                          <p>Aero Maya es una aplicación web de venta de boletos Online
+                                          para que puedas reservar tus boletos y puedas viajar cómodamente
+                                          con nuestro servicio de confianza, amigable y seguro.</p>
 
-                                          <div class="row form-group">
-                                              <div class="col col-md-3">
-                                                  <label for="select" class=" form-control-label">Tipo de Pasaje</label>
-                                              </div>
-                                              <div class="col-12 col-md-9">
-                                                  <select name="select" id="select" class="form-control">
-                                                      <option value="0">Seleccionar...</option>
-                                                      <option value="1">Clase Economica</option>
-                                                      <option value="2">Clase de Negocios</option>
-                                                      <option value="3">Primera Clase</option>
-                                                  </select>
-                                              </div>
-                                          </div>
+                                          <strong>¿Hay un limite de boletos para comprar?</strong>
+                                          <p>Aero Maya es una aplicación web de venta de boletos Online
+                                          para que puedas reservar tus boletos y puedas viajar cómodamente
+                                          con nuestro servicio de confianza, amigable y seguro.</p>
 
+                                          <strong>¿Cuál es la política de devolución de boletos?</strong>
+                                          <p>Para poder tener el reembolso de tu dinero y devolver el boleto
+                                          se debe tener comunicación directa con un administrador de la página
+                                          y que este te de las instrucciones para que puedas hacer el debido
+                                          proceso, firmas y acuerdos para recibir tu dinero de vuelta.</p>
 
-                                            <div class="row form-group">
-                                                <div class="col col-md-3">
-                                                    <label for="select" class=" form-control-label">Origen</label>
-                                                </div>
-                                                <div class="col-12 col-md-9">
-                                                    <select name="select" id="select" class="form-control">
-                                                        <option value="0">Seleccionar...</option>
-                                                        <option value="1">Origen #1</option>
-                                                        <option value="2">Origen #2</option>
-                                                        <option value="3">Origen #3</option>
-                                                    </select>
-                                                </div>
-                                            </div>
+                                          <strong>¿Hay distintos tipos de asientos?</strong>
+                                          <p>Si, tenemos una variedad de asientos desde los comerciales
+                                          para todo tipo de personas hasta los de lujo con todas las
+                                          comodidades, consulta el tipo de asiento cuando estes por buscar
+                                          tus vuelos y selecciona el de tu preferencia.</p>
 
-                                            <div class="row form-group">
-                                                <div class="col col-md-3">
-                                                    <label for="select" class=" form-control-label">Destino</label>
-                                                </div>
-                                                <div class="col-12 col-md-9">
-                                                    <select name="select" id="select" class="form-control">
-                                                        <option value="0">Seleccionar...</option>
-                                                        <option value="1">Destino #1</option>
-                                                        <option value="2">Destino #2</option>
-                                                        <option value="3">Destino #3</option>
-                                                    </select>
-                                                </div>
-                                            </div>
+                                          <strong>¿Trabajan con Aerolíneas Confiables?</strong>
+                                          <p>La confiabilidad es algo importante para nosotros,
+                                          pero tu confianza lo es aún más por lo que tenemos
+                                          un apartado solo para mostrarte nuestras aerolíneas
+                                          afiliadas y que tu puedas revisar personalmente con
+                                          cuales trabajamos y cual es la que te gustaría
+                                          escoger para volar.</p>
 
-                                            <div class="row form-group">
-                                                <div class="col col-md-3">
-                                                    <label for="select" class=" form-control-label">Fecha de Salida</label>
-                                                </div>
-                                                <div class="col-12 col-md-9">
-                                                  <div class="input-group date" data-provide="datepicker">
-                                                    <input type="text" class="form-control">
-                                                    <div class="input-group-addon">
-                                                      <span class="glyphicon glyphicon-th"></span>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                         </div>
+                                          <strong>¿Necesito registrarme para comprar?</strong>
+                                          <p>Así es, necesitas estar registrado para comprar tus boletos,
+                                          recuerda que los recibos y comprobantes estarán a nombre de los
+                                          datos del usuario, añadido a esto te enviaremos correos a los
+                                          contactos que coloques y la información que nos des la
+                                          usaremos para contactarte.</p>
 
-                                         <div class="row form-group">
-                                             <div class="col col-md-3">
-                                                 <label for="select" class=" form-control-label">Fecha de Regreso</label>
-                                             </div>
-                                             <div class="col-12 col-md-9">
-                                               <div class="input-group date" data-provide="datepicker">
-                                                 <input type="text" class="form-control">
-                                                 <div class="input-group-addon">
-                                                   <span class="glyphicon glyphicon-th"></span>
-                                                 </div>
-                                               </div>
-                                         </div>
-                                      </div>
-                                      <div class="d-flex flex-row-reverse">
-                                          <input id="btnContinueSearch" type="button" name="btnContinue" value="Buscar" class="au-btn au-btn-icon au-btn--green" >
-                                      </div>
+                                          <strong>¿Los boletos son transferibles?</strong>
+                                          <p>Los boletos no se pueden transferir, además de que para
+                                          adquirirlos físicamente necesitas algún comprobante para
+                                          recogerlos además de tu persona, por lo que por seguridad
+                                          no son transferibles.</p>
 
-                                        </form>
+                                          <strong>¿La página web puede tener ataques y amenazar mi información?</strong>
+                                          <p>No, la página tiene encriptación en la base de datos y
+                                          en la conexión que posee con el resto del internet, tu información
+                                          estará segura con nosotros.</p>
                                     </div>
 								                 </div>
-                                 <div class="overview-wrap">
-                                     <h2 class="title-1">Destinos Interesantes</h2>
-
-                                 </div>
                             </div>
 
-                            <div class="col-md-4">
-                              <div class="card">
-                                  <img class="card-img-top" src="images/destino1.png" alt="Card image cap">
-                                  <div class="card-body">
-                                      <h4 class="card-title mb-3">Madrid, España</h4>
-                                      <p class="card-text">Además de poder disfrutar de la fiebre del futbol y de los mejores clubs,
-                                        podrás deleitarte con los mejores hoteles, la gastronomía de la ciudad,
-                                        tradiciones y sitios históricos en un solo lugar.
-                                      </p>
-                                  </div>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="card">
-                                  <img class="card-img-top" src="images/destino2.png" alt="Card image cap">
-                                  <div class="card-body">
-                                      <h4 class="card-title mb-3">Londes, Inglaterra</h4>
-                                      <p class="card-text">El palacio de Buckingham, los puentes levadizos,
-                                        autos y bares propios de James Bond, el mejor destino si quieres disfrutar
-                                        de buenas bebidas junto a las miles de historias que cuenta la ciudad.
-                                      </p>
-                                  </div>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="card">
-                                  <img class="card-img-top" src="images/destino3.png" alt="Card image cap">
-                                  <div class="card-body">
-                                      <h4 class="card-title mb-3">Nueva York, USA</h4>
-                                      <p class="card-text">Si te gusta el frio, no dormir y visitar centros históricos
-                                        que aparecen en miles de películas, este es el destino indicado, una ciudad que
-                                        nunca duerme junto a los miles de lugares que puedes visitar.
-                                      </p>
-                                  </div>
-                              </div>
-                            </div>
+
 
                             <!--FOOTER-->
                             <footer class="footer">
                               <div class="container-fluid">
                                 <div class="copyright">
-                                      <p><a href="privacidad.html">Política de Privacidad</a></p>
+                                    <p><a href="privacidad.php">Política de Privacidad</a></p>
                                     <p>Copyright © 2021 Aero Maya. Todos Los Derechos Reservados.</p>
                                 </div>
                               </div>
