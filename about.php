@@ -10,7 +10,7 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>Pago</title>
+    <title>Dashboard</title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -32,7 +32,6 @@
 
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
-    <link href="css/payment.css" rel="stylesheet" media="all">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -57,7 +56,7 @@ $("#enddate_datepicker").datepicker();
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
                         <a class="logo" href="index.html">
-                          <img src="images/icon/Logo.png" alt="CoolAdmin" />
+                          <img src="images/icon/aero-maya-large.png" alt="CoolAdmin" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
@@ -172,7 +171,7 @@ $("#enddate_datepicker").datepicker();
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
                 <a href="#">
-                  <img src="images/icon/Logo.png" alt="Cool Admin" />
+                  <img src="images/icon/aero-maya-large.png" alt="Cool Admin" />
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
@@ -180,30 +179,34 @@ $("#enddate_datepicker").datepicker();
                     <ul class="list-unstyled navbar__list">
 
                         <li>
-                            <a href="#">
+                            <a href="index.php">
                                 <i class="fas fa-home"></i>Home</a>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="aerolineas.php">
                                 <i class="fas fa-plane"></i>Aerolineas Afiliadas</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="calendar.php">
                                 <i class="fas fa-calendar-alt"></i>Calendario</a>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="preguntas.php">
                                 <i class="fas fa-question"></i>Preguntas</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="about.php">
                                 <i class="fas  fa-bullhorn"></i>Sobre Nosotros</a>
                         </li>
 
 
                     </ul>
+                    <div class="">
+                      <h4>Publicidad</h4>
+                      <img src="images/anuncio.gif" alt="">
+                    </div>
                 </nav>
             </div>
         </aside>
@@ -216,16 +219,6 @@ $("#enddate_datepicker").datepicker();
                <div class="section__content section__content--p30">
                    <div class="container-fluid">
                        <div class="header-wrap">
-                           <form class="form-header" action="" method="POST">
-                               <input class="au-input au-input--xl" type="text" name="search" placeholder="Search for datas &amp; reports..." />
-                               <button class="au-btn--submit" type="submit">
-                                   <i class="zmdi zmdi-search"></i>
-                               </button>
-                           </form>
-                           <div class="header-button">
-
-                               <div class="account-wrap"> </div>
-                           </div>
                            <button id="btnRegister" class="au-btn au-btn-icon au-btn--green">
                                         <i class="zmdi"></i>Registrarse</button>
                            <button id="btnLogin" class="au-btn au-btn-icon au-btn--blue">
@@ -241,87 +234,86 @@ $("#enddate_datepicker").datepicker();
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
 
-                            <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-header">
-                    <strong>Pago con tarjeta de credito</strong>
-                    <small>Ingrese los detalles de su tarjeta</small>
-                </div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="name">Nombre</label>
-                                <input class="form-control" id="name" type="text" placeholder="Ingrese su nombre">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="ccnumber">Número de tarjeta de crédito</label>
-                                <div class="input-group">
-                                    <input class="form-control" type="text" placeholder="0000 0000 0000 0000" autocomplete="email">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text">
-                                            <i class="mdi mdi-credit-card"></i>
-                                        </span>
+                        <div class="row m-t-25">
+                          <div class="col-sm-6 col-lg-3 col-xl-12">
+                                <div class="card">
+								                        <div class="card-header">
+                                        <h1 align="center">Sobre Nosotros</h1>
+                                        <div align="center">
+                                        <img src="images/icon/aero-maya.png" alt="" height="300" width="300">
+                                        </div>
+                                        <h2>Somos una plataforma web confiable para la compra de boletos de vuelos comerciales.</h2>
+                                        <h4>Tenemos tanto seguridad para la encriptacion de la informacion como para la conexion
+                                        de la página con otras redes, creamos una página que deja al usuario libre para rondar por
+                                        nuestras páginas de cotización y lista de afiliación con tal de hacer más fácil su selección de
+                                        vuelo y que viajar con nostros sea la mejor experiencia.</h4>
+                                        <h4>La Lista de los Creadores: </h4>
+
+                                        <div class="table-responsive m-b-40">
+                                          <table class="table table-borderless table-data3">
+                                            <thead>
+                                              <tr>
+                                                <th>Nombre</th>
+                                                <th>Carné</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>Andrea Paola Fernanda Ruano Hernández</td>
+                                                <td>0900-13-20105</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Angel Alberto Oliva Garcia</td>
+                                                <td>0900-17-228</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Diego Alexander Solórzano Garrido</td>
+                                                <td>0900-17-3716</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Esvin Ricardo Mayorga Asturias</td>
+                                                <td>0900-17-1154</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Jose Daniel Perez Sandoval</td>
+                                                <td>0900-14-913</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Melanie Andrea Jolón Cabrera</td>
+                                                <td>0900-17-1053</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Patrick Alessandro Franco Hernández</td>
+                                                <td>0900-17-2900</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Manuel de Jesús Vega Gómez</td>
+                                                <td>0900-15-2718</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Josué Alejandro Gramajo Cujantes</td>
+                                                <td>0900-16-3067</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
                                     </div>
+								                 </div>
+                            </div>
+
+
+
+                            <!--FOOTER-->
+                            <footer class="footer">
+                              <div class="container-fluid">
+                                <div class="copyright">
+                                    <p><a href="privacidad.php">Política de Privacidad</a></p>
+                                    <p>Copyright © 2021 Aero Maya. Todos Los Derechos Reservados.</p>
                                 </div>
-                            </div>
-                        </div>
+                              </div>
+                            </footer>
+
                     </div>
-                    <div class="row">
-                        <div class="form-group col-sm-4">
-                            <label for="ccmonth">Mes</label>
-                            <select class="form-control" id="ccmonth">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                                <option>11</option>
-                                <option>12</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-sm-4">
-                            <label for="ccyear">Año</label>
-                            <select class="form-control" id="ccyear">
-                                <option>2014</option>
-                                <option>2015</option>
-                                <option>2016</option>
-                                <option>2017</option>
-                                <option>2018</option>
-                                <option>2019</option>
-                                <option>2020</option>
-                                <option>2021</option>
-                                <option>2022</option>
-                                <option>2023</option>
-                                <option>2024</option>
-                                <option>2025</option>
-                            </select>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label for="cvv">CVV</label>
-                                <input class="form-control" id="cvv" type="text" placeholder="123">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center card-footer">
-                    <button id="btnRegister" class="au-btn au-btn-icon au-btn--green">
-                                        <i class="zmdi"></i>PAGAR</button>
-                </div>
-            </div>
-        </div>
-    </div>
                 </div>
             </div>
             <!-- END MAIN CONTENT-->

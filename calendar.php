@@ -30,6 +30,9 @@
     <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
 
+    <!-- Calendar -->
+    <link href='vendor/fullcalendar-3.10.0/fullcalendar.css' rel='stylesheet' media="all" />
+
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
@@ -179,30 +182,35 @@ $("#enddate_datepicker").datepicker();
                     <ul class="list-unstyled navbar__list">
 
                         <li>
-                            <a href="index.html">
+                            <a href="index.php">
                                 <i class="fas fa-home"></i>Home</a>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="aerolineas.php">
                                 <i class="fas fa-plane"></i>Aerolineas Afiliadas</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="calendar.php">
                                 <i class="fas fa-calendar-alt"></i>Calendario</a>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="preguntas.php">
                                 <i class="fas fa-question"></i>Preguntas</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="about.php">
                                 <i class="fas  fa-bullhorn"></i>Sobre Nosotros</a>
                         </li>
 
 
                     </ul>
+
+                    <div class="">
+                      <h4>Publicidad</h4>
+                      <img src="images/anuncio.gif" alt="">
+                    </div>
                 </nav>
             </div>
         </aside>
@@ -231,152 +239,42 @@ $("#enddate_datepicker").datepicker();
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
+                              <!--AVISO COVID-->
+                              <div class="card bg-primary">
+                                <strong style="color:#FFFFFF";><i class="fas fa-exclamation-circle" style="color:#FFFFFF";></i> ¡ADVERTENCIA!</strong>
+                                <p style="color:#FFFFFF";>Debido a la Pandemia Mundial de COVID-19 se le recomienda investigar
+                                  sus destinos y la seguridad en los países que visitará. Mantenga la
+                                  distancia social y no salga o viaje si no es necesario. Para más información,
+                                  clic en el enlace de la OMG: <a style="color:#FFFF00"; href="https://www.who.int/es">Clic Aquí</a> </p>
+                              </div>
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">Selección De Boletos</h2>
+                                    <h1>Calendario</h1>
+                                </div>
 
+                            </div>
+                        </div>
+                        <div class="main-content">
+                            <div class="section__content section__content--p30">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col">
+                                          <div class="au-card">
+                                            <div id="calendar"></div>
+                                          </div>
+                                        </div><!-- .col -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row m-t-25">
-                          <div class="col-sm-6 col-lg-3 col-xl-12">
-                                <div class="card">
-								                          <div class="card-header">
-                                        <strong>¡Escoja sus Vuelos con Nosotros!</strong> Seleccione su origen y destino:
-                                    </div>
-									                           <div class="card-body card-block">
-                                        <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
-
-                                          <div class="row form-group">
-                                              <div class="col col-md-3">
-                                                  <label for="select" class=" form-control-label">Tipo de Pasaje</label>
-                                              </div>
-                                              <div class="col-12 col-md-9">
-                                                  <select name="select" id="select" class="form-control">
-                                                      <option value="0">Seleccionar...</option>
-                                                      <option value="1">Clase Economica</option>
-                                                      <option value="2">Clase de Negocios</option>
-                                                      <option value="3">Primera Clase</option>
-                                                  </select>
-                                              </div>
-                                          </div>
-
-
-                                            <div class="row form-group">
-                                                <div class="col col-md-3">
-                                                    <label for="select" class=" form-control-label">Origen</label>
-                                                </div>
-                                                <div class="col-12 col-md-9">
-                                                    <select name="select" id="select" class="form-control">
-                                                        <option value="0">Seleccionar...</option>
-                                                        <option value="1">Origen #1</option>
-                                                        <option value="2">Origen #2</option>
-                                                        <option value="3">Origen #3</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="row form-group">
-                                                <div class="col col-md-3">
-                                                    <label for="select" class=" form-control-label">Destino</label>
-                                                </div>
-                                                <div class="col-12 col-md-9">
-                                                    <select name="select" id="select" class="form-control">
-                                                        <option value="0">Seleccionar...</option>
-                                                        <option value="1">Destino #1</option>
-                                                        <option value="2">Destino #2</option>
-                                                        <option value="3">Destino #3</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="row form-group">
-                                                <div class="col col-md-3">
-                                                    <label for="select" class=" form-control-label">Fecha de Salida</label>
-                                                </div>
-                                                <div class="col-12 col-md-9">
-                                                  <div class="input-group date" data-provide="datepicker">
-                                                    <input type="text" class="form-control">
-                                                    <div class="input-group-addon">
-                                                      <span class="glyphicon glyphicon-th"></span>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                         </div>
-
-                                         <div class="row form-group">
-                                             <div class="col col-md-3">
-                                                 <label for="select" class=" form-control-label">Fecha de Regreso</label>
-                                             </div>
-                                             <div class="col-12 col-md-9">
-                                               <div class="input-group date" data-provide="datepicker">
-                                                 <input type="text" class="form-control">
-                                                 <div class="input-group-addon">
-                                                   <span class="glyphicon glyphicon-th"></span>
-                                                 </div>
-                                               </div>
-                                         </div>
-                                      </div>
-                                      <div class="d-flex flex-row-reverse">
-                                          <input id="btnContinueSearch" type="button" name="btnContinue" value="Buscar" class="au-btn au-btn-icon au-btn--green" >
-                                      </div>
-
-                                        </form>
-                                    </div>
-								                 </div>
-                                 <div class="overview-wrap">
-                                     <h2 class="title-1">Destinos Interesantes</h2>
-
-                                 </div>
+                        <!--FOOTER-->
+                        <footer class="footer">
+                          <div class="container-fluid">
+                            <div class="copyright">
+                                  <p><a href="privacidad.php">Política de Privacidad</a></p>
+                                <p>Copyright © 2021 Aero Maya. Todos Los Derechos Reservados.</p>
                             </div>
-
-                            <div class="col-md-4">
-                              <div class="card">
-                                  <img class="card-img-top" src="images/destino1.png" alt="Card image cap">
-                                  <div class="card-body">
-                                      <h4 class="card-title mb-3">Madrid, España</h4>
-                                      <p class="card-text">Además de poder disfrutar de la fiebre del futbol y de los mejores clubs,
-                                        podrás deleitarte con los mejores hoteles, la gastronomía de la ciudad,
-                                        tradiciones y sitios históricos en un solo lugar.
-                                      </p>
-                                  </div>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="card">
-                                  <img class="card-img-top" src="images/destino2.png" alt="Card image cap">
-                                  <div class="card-body">
-                                      <h4 class="card-title mb-3">Londes, Inglaterra</h4>
-                                      <p class="card-text">El palacio de Buckingham, los puentes levadizos,
-                                        autos y bares propios de James Bond, el mejor destino si quieres disfrutar
-                                        de buenas bebidas junto a las miles de historias que cuenta la ciudad.
-                                      </p>
-                                  </div>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="card">
-                                  <img class="card-img-top" src="images/destino3.png" alt="Card image cap">
-                                  <div class="card-body">
-                                      <h4 class="card-title mb-3">Nueva York, USA</h4>
-                                      <p class="card-text">Si te gusta el frio, no dormir y visitar centros históricos
-                                        que aparecen en miles de películas, este es el destino indicado, una ciudad que
-                                        nunca duerme junto a los miles de lugares que puedes visitar.
-                                      </p>
-                                  </div>
-                              </div>
-                            </div>
-
-                            <!--FOOTER-->
-                            <footer class="footer">
-                              <div class="container-fluid">
-                                <div class="copyright">
-                                      <p><a href="privacidad.html">Política de Privacidad</a></p>
-                                    <p>Copyright © 2021 Aero Maya. Todos Los Derechos Reservados.</p>
-                                </div>
-                              </div>
-                            </footer>
-
-                    </div>
+                          </div>
+                        </footer>
                 </div>
             </div>
             <!-- END MAIN CONTENT-->
@@ -412,9 +310,55 @@ $("#enddate_datepicker").datepicker();
     </script>
 
     <!-- Main JS-->
+    <script src="vendor/fullcalendar-3.10.0/lib/moment.min.js"></script>
+    <script src="vendor/fullcalendar-3.10.0/fullcalendar.js"></script>
     <script src="js/main.js"></script>
     <script src="js/example1.js"></script>
     <script src="js/index.js"></script>
+    <script type="text/javascript">
+$(function() {
+  // for now, there is something adding a click handler to 'a'
+  var tues = moment().day(2).hour(19);
+
+  // build trival night events for example data
+  var events = [
+    {
+      title: "Ida",
+      start: moment().format('YYYY-MM-DD'),
+      url: '#'
+    },
+    {
+      title: "Vuelta",
+      start: moment().hour(0).add(2, 'days').toISOString(),
+      url: '#'
+    }
+
+  ];
+
+  var trivia_nights = []
+
+  for(var i = 1; i <= 4; i++) {
+    var n = tues.clone().add(i, 'weeks');
+    console.log("isoString: " + n.toISOString());
+    trivia_nights.push({
+      title: 'Ofertas',
+      start: n.toISOString(),
+      allDay: false,
+      url: '#'
+    });
+  }
+
+  // setup a few events
+  $('#calendar').fullCalendar({
+    header: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'month,agendaWeek,agendaDay,listWeek'
+    },
+    events: events.concat(trivia_nights)
+  });
+});
+    </script>
 
 </body>
 
